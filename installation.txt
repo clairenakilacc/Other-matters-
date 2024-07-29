@@ -1,0 +1,18 @@
+cp .env.example .env
+
+composer install
+
+composer require filament/filament:"^3.2" -W
+
+php artisan filament:install --panels
+
+php artisan migrate
+
+php artisan make:filament-user
+
+php artisan shield:install --fresh
+
+
+
+
+*************************************
