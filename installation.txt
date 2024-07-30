@@ -13,6 +13,7 @@ php artisan make:filament-user
 php artisan shield:install --fresh
 
 
-
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+//that is defined in migration table
 
 *************************************
